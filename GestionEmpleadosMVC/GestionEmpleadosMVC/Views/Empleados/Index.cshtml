@@ -1,0 +1,18 @@
+﻿@model IEnumerable<GestionEmpleadosMVC.Models.Empleado>
+
+<h2>Lista de Empleados</h2>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Nombre</th>
+        <th>Puesto</th>
+    </tr>
+
+    @foreach (var empleado in Model)
+    {
+        <tr>
+            <td>@empleado.Nombre</td>
+            <td>@empleado.Puesto</td>
+        </tr>
+    }
+</table>

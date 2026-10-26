@@ -1,0 +1,20 @@
+﻿@model GestionEmpleadosMVC.Models.Empleado
+
+<h2>Editar Empleado</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(e => e.Id)
+
+    <label>Nombre:</label>
+    @Html.TextBoxFor(e => e.Nombre)
+    <br />
+    <br />
+
+    <label>Puesto:</label>
+    @Html.TextBoxFor(e => e.Puesto)
+    <br />
+    <br />
+
+    <input type="submit" value="Guardar cambios" />
+}
