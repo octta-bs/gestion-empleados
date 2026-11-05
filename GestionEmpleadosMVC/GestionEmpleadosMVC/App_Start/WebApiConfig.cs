@@ -10,6 +10,8 @@ namespace GestionEmpleadosMVC.App_Start
     {
         public static void Register(HttpConfiguration config)
         {
+            config.MessageHandlers.Add(new JwtHandler());
+
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

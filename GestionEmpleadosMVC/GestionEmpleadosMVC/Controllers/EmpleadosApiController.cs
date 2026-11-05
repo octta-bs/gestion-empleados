@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace GestionEmpleadosMVC.Controllers
 {
+    [System.Web.Http.Authorize]
     public class EmpleadosApiController : ApiController
     {
         private IEmpleadoRepositorio repositorio = new EmpleadoRepositorioEF();
